@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html with css</title>
+    <style>
+        /* *{
+            color: orange;
+        } */
+       .class-sel{
+        text-align: center;
+        color: red;
+       }
+       #id-sel{
+        color: blue;
+        text-align: left;
+       }
+       /* [type="text"]{
+        height: 40px;
+        width: 200px;
+       } */
+       .font-of-h1{
+        font-size: 25px;
+        font-weight: bold;
+
+       }
+       .border{
+        border: 2px solid red;
+        height: 200px;
+        width: 300px;
+        border-radius: 10px;
+       }
+       .border1{
+        border: 2px solid rgb(5, 40, 61);
+        height: 100px;
+        width: 150px;
+        border-radius: 10px;
+        margin:auto;
+        margin-top: 40px;
+       }
+       .border1 h2{
+        padding: 20px 10px;
+       }
+       a{
+        color: #fff;
+        text-decoration: none;
+       }
+       button{
+        height: 40px;
+        width:200px;
+        border-radius: 20px;
+        background-color: green;
+        color: #fff;
+        border-color: green;
+        font-size: large;
+        font-weight: bold;
+       }
+       .nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: #fff;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+
+       }
+       .list-items ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    
+       }
+       form{
+        width: 40%;
+        margin-left: 30%;  
+        border: 1px solid black; 
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 10px;
+       }
+       input{
+        width: 100%;
+        height: 30px;
+        font-size: large;
+       }
+       form div{
+        margin-bottom: 20px;
+       }
+       label{
+        font-size: large;
+        margin-bottom: 20px;
+       }
+       .child-flex {
+        height: 100px;
+        width: 100px;
+        border: 1px solid gray;
+       }
+       .child-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       }
+       :target{
+        background-color: pink;
+       }
+       table , td, th{
+        border: 1px solid black;
+        border-collapse: collapse;
+       }
+       tr:nth-child(2n){
+        background-color: rgb(86, 84, 84);
+        color: #fff;
+       }
+       thead tr{
+        background-color: rgb(86, 84, 84);
+        color: #fff;
+       }
+       .example-ani{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+       }
+       @keyframes example {
+          0%{background-color: red; left: 0; top:0 ;}
+          25%{background-color: yellow; left:300px ; top:0;}
+          50%{background-color: blue; left: 300px; top:300px}
+          75%{background-color: green; left: 0; top:300px}
+          100%{background-color: pink;left: 0; top:0}
+       }
+
+       .loder {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 16px solid rgb(181, 190, 198);
+        border-top: 16px solid rgb(29, 79, 108);
+        animation: loder 2s infinite linear ;
+       }
+       @keyframes loder {
+        from{transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+       }
+    </style>
+</head>
+<body>
+    <!-- Task 1 Css selecter  -->
+
+
+    <!-- <h1 class="class-sel">hello world</h1>
+    <h2 class="class-sel">hii hello</h2>
+    <h1 class="class-sel" id="id-sel">hello world</h1>
+
+    <input type="text" placeholder="Enter name">
+    <h1>Universal style is aplicable here</h1> -->
+
+
+
+     <!--Task 2 Font Color Background and Border  -->
+
+     <!-- <p class="font-of-h1">Hello world</p>
+
+     <div class="border">
+          <h3>hello class hello world</h3>
+     </div> -->
+
+
+
+     <!-- Task 3 box model and flote alignment -->
+
+     <!-- <div class="border">
+        <div class="border1">
+            <h2>hello world</h2>
+        </div>
+     </div> -->
+
+
+     <!-- Task 4 link and button styling -->
+
+     <!-- <a href="https://www.google.com/" target="_blank"> <button>Visit on Google</button></a> -->
+
+
+
+     <!-- task 5 Navigation menu stylings -->
+
+     <!-- <nav class="nav">
+         <div>
+            <h1>LOGO</h1>
+         </div>
+         <div class="list-items"> 
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+         </div>
+     </nav> -->
+
+
+     <!-- Task 6 Form style  -->
+     <!-- <div>
+        <h1 style="text-align: center; margin-top: 100px;">User Details Form</h1>
+        <form action="">
+
+            <div>
+                <label for="">Name</label><br>
+                <input type="text" placeholder="enter Name">
+            </div>
+            <div>
+                <label for="">Email</label><br>
+                <input type="email" placeholder="enter email">
+            </div>
+            <div>
+                <label for="">Password</label><br>
+                <input type="password" placeholder="enter password">
+            </div>
+        </form>
+     </div> -->
+
+
+     <!-- Task 8  flex properties  -->
+
+     <!-- <div class="child-container">
+        <div class="child-flex"></div>
+        <div class="child-flex"></div>
+        <div class="child-flex"></div>
+        <div class="child-flex"></div>
+        <div class="child-flex"></div>
+        <div class="child-flex"></div>
+        <div class="child-flex"></div>
+        <div class="child-flex"></div>
+     </div> -->
+
+
+    
+<!-- Task 9 targeted seletecter -->
+  <!-- <nav class="nav">
+         <div>
+            <h1>LOGO</h1>
+         </div>
+         <div class="list-items"> 
+            <ul>
+                <li><a href="#para1">Paragraph 1</a></li>
+                <li><a href="#para2">Paragraph 2</a></li>
+                <li><a href="#para3">Paragraph 3</a></li>
+                <li><a href="#para4">Paragraph 4</a></li>
+                <li><a href="#para5">Paragraph 5</a></li>
+            </ul>
+         </div>
+     </nav>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt facere debitis laborum rem impedit error quaerat neque vel reprehenderit eum provident molestias, enim, ipsum, exercitationem dicta eius corporis temporibus?</p>
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt facere debitis laborum rem impedit error quaerat neque vel reprehenderit eum provident molestias, enim, ipsum, exercitationem dicta eius corporis temporibus?</p>
+    <p id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt facere debitis laborum rem impedit error quaerat neque vel reprehenderit eum provident molestias, enim, ipsum, exercitationem dicta eius corporis temporibus?</p>
+    <p id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt facere debitis laborum rem impedit error quaerat neque vel reprehenderit eum provident molestias, enim, ipsum, exercitationem dicta eius corporis temporibus?</p>
+    <p id="para5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt facere debitis laborum rem impedit error quaerat neque vel reprehenderit eum provident molestias, enim, ipsum, exercitationem dicta eius corporis temporibus?</p> -->
+  
+  
+    <!-- Task 10 nth child pseudo selecter -->
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dipali</td>
+                <td>Jadhav</td>
+            </tr>
+            <tr>
+                <td>Arati</td>
+                <td>Khatale</td>
+            </tr>
+            <tr>
+                <td>Divya</td>
+                <td>Nathe</td>
+            </tr>
+            <tr>
+                <td>Ritika</td>
+                <td>Nathe</td>
+            </tr>
+            <tr>
+                <td>swati</td>
+                <td>khatale</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+
+    <!-- Second Day task 1 Animation  -->
+
+    <!-- <div class="example-ani">
+        
+    </div> -->
+
+
+    <div class="loder"></div>
+</body>
+</html>
